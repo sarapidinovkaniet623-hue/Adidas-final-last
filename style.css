@@ -1,0 +1,371 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Верхний баннер */
+.ru {
+    width: 100%;
+    max-height: 800px;
+    object-fit: cover;
+    display: block;
+}
+
+header {
+    border: 2px solid rgba(177, 177, 177, 0.774);
+    width: 100%;
+    border-top: none;
+    padding: 10px 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ty {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+nav {
+    display: flex;
+    gap: 80px;
+}
+
+nav a {
+    font-size: large;
+    text-decoration: none;
+    color: #48555B;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: rgb(16, 146, 233);
+    transform: scale(1.05);
+}
+
+.ty:hover {
+    transform: scale(1.05);
+}
+
+/* Секция Our history */
+.rt {
+    width: 100%;
+    margin: 50px 0;
+    padding: 0 50px;
+}
+
+.sk {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    color: #27292b;
+    margin-bottom: 40px;
+    transition: all 0.3s ease;
+}
+
+.tu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.left {
+    max-width: 650px;
+    font-size: large;
+}
+
+.i {
+    font-size: larger;
+    margin-top: 20px;
+    color: #48555B;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+.u {
+    font-size: xx-large;
+    color: #27292b;
+    transition: all 0.3s ease;
+}
+
+/* Прижимаем логотип к правой стороне */
+.ri {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ad {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.sk:hover, .u:hover {
+    color: rgb(16, 146, 233);
+    transform: scale(1.03);
+}
+
+.i:hover {
+    color: #1b1c1d;
+    transform: scale(1.02);
+}
+
+.ad:hover, .l:hover, .c:hover {
+    transform: scale(1.05);
+}
+
+/* Секция Карусели во всю ширину (1 фото на экран) */
+.ip {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.pog {
+    color: #48555B;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    margin-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.pog:hover {
+    color: rgb(16, 146, 233);
+    transform: scale(1.05);
+}
+
+#adidas-carousel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Скрываем полосу прокрутки в Firefox */
+}
+
+#adidas-carousel::-webkit-scrollbar {
+    display: none; /* Скрываем полосу прокрутки в Chrome/Safari */
+}
+
+#adidas-carousel .carousel-item {
+    min-width: 100%;
+    width: 100%;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+#adidas-carousel .carousel-item img {
+    width: 100%;
+    height: 750px; /* Высота на ПК */
+    object-fit: cover;
+}
+
+/* Нижняя секция с Месси, кнопкой и ЧМ-2026 */
+.hg {
+    height: auto;
+    padding: 0 20px;
+}
+
+.down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pok {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    color: #48555B;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+}
+
+.pok:hover {
+    color: rgb(16, 146, 233);
+    transform: scale(1.05);
+}
+
+.ny {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+}
+
+.shop-btn {
+    text-decoration: none;
+    color: #242829;
+    width: 380px;
+    height: 90px;
+    font-size: 34px;
+    font-weight: 600;
+    background-color: rgb(16, 146, 233);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.shop-btn:hover {
+    transform: scale(1.06);
+    background-color: rgb(17, 121, 190);
+    color: #1b1c1d;
+}
+
+.l, .c {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.io {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 500;
+    margin-top: 60px;
+    color: #27292b;
+    transition: all 0.3s ease;
+}
+
+.io:hover {
+    color: rgb(16, 146, 233);
+    transform: scale(1.05);
+}
+
+/* Футер */
+footer {
+    margin-top: 80px;
+    width: 100%;
+}
+
+footer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================================
+   АДАПТАЦИЯ ПОД ПЛАНШЕТЫ (до 1024px)
+   ========================================= */
+@media (max-width: 1024px) {
+    .tu {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .ri {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    #adidas-carousel .carousel-item img {
+        height: 450px;
+    }
+
+    .ny {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .l, .c {
+        max-width: 320px;
+    }
+}
+
+/* =========================================
+   АДАПТАЦИЯ ПОД ТЕЛЕФОНЫ (до 600px)
+   ========================================= */
+@media (max-width: 600px) {
+    header {
+        padding: 15px 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .ty {
+        width: 140px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    nav a {
+        font-size: medium;
+    }
+
+    .rt {
+        padding: 0 15px;
+    }
+
+    .sk, .u, .pok, .io {
+        font-size: x-large;
+    }
+
+    .i {
+        font-size: medium;
+    }
+
+    #adidas-carousel .carousel-item img {
+        height: 280px; /* Пропорциональная высота на телефоне */
+    }
+
+    .pok {
+        margin-top: 40px;
+    }
+
+    .shop-btn {
+        width: 260px;
+        height: 65px;
+        font-size: 24px;
+    }
+
+    .l, .c {
+        max-width: 240px;
+    }
+
+    .io {
+        margin-top: 40px;
+        font-size: large;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
